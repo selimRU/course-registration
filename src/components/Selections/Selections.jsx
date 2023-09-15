@@ -4,8 +4,8 @@ import Selection from '../Selected/Selection';
 
 const Selections = ({ selections, credit, remainingCredit, totalPrice }) => {
     return (
-        <div className=' lg:w-1/5 '>
-            <div className=' bg-white px-3 bg rounded-md py-3 '>
+        <div className=' lg:w-1/5'>
+            <div className=' bg-white px-3 bg rounded-md py-3 sticky top-0'>
                 <p className='border-b-2 py-3 text-sm font-bold text-blue-400'>Credit Hour Remaining : {remainingCredit > 1 ? `${remainingCredit} hrs` : `${remainingCredit} hr`}</p>
                 <h4 className='border-b-2 py-4 text-xl font-bold'>Course Name</h4>
 
