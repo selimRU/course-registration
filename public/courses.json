@@ -1,0 +1,74 @@
+[
+    {
+        "id": 1,
+        "img": "https://i.ibb.co/Gc8WMHq/pic1.png",
+        "title": "C Programming Essentials",
+        "description": "This comprehensive course covers the fundamentals of C programming language. You'll start with the basics, including variables, data types, and control structures. As you progress, you'll delve into more advanced topics like functions, pointers, and memory management. By the end of this course, you'll have a solid understanding of C and be ready to tackle more complex programming challenges. Whether you're a beginner or looking to refresh your C skills, this course is a great choice.",
+        "price": 2000.0,
+        "credit": 3
+    },
+    {
+        "id": 2,
+        "img": "https://i.ibb.co/ypSRZF5/pic2.png",
+        "title": "Algorithms and Data Structures",
+        "description": "Master algorithms and data structures for efficient programming.Master algorithms and data structures for efficient programming in this intensive course. You'll learn various sorting and searching algorithms, as well as how to implement common data structures like arrays, linked lists, and trees. Through hands-on exercises and projects, you'll gain practical experience in algorithm design and analysis. This course is ideal for programmers looking to enhance their problem-solving skills and become more efficient developers.",
+        "price": 2100.0,
+        "credit": 4
+    },
+    {
+        "id": 3,
+        "img": "https://i.ibb.co/CbjdHNv/pic3.png",
+        "title": "Advanced C++ Programming",
+        "description": "Take your C++ skills to the next level with this advanced course. You'll explore advanced C++ features, including templates, the Standard Template Library (STL), and exception handling. Additionally, you'll dive into design patterns and best practices for writing efficient C++ code. This course is perfect for experienced C++ developers looking to become C++ masters.",
+        "price": 2200.0,
+        "credit": 4
+    },
+    {
+        "id": 4,
+        "img": "https://i.ibb.co/6nsbcNv/pic4.png",
+        "title": "Data Structures and Algorithms in C++",
+        "description": "In this hands-on course, you'll learn how to implement common data structures and algorithms in C++. Topics include arrays, linked lists, stacks, queues, and various searching and sorting algorithms. Through coding exercises and projects, you'll gain practical experience in applying these concepts to real-world problems. This course is essential for aspiring software developers and computer science students.",
+        "price": 2300.0,
+        "credit": 5
+    },
+    {
+        "id": 5,
+        "img": "https://i.ibb.co/8gXx2ns/pic5.png",
+        "title": "Object-Oriented Programming with Python",
+        "description": "Delve into the world of object-oriented programming (OOP) with Python. You'll learn the principles of OOP, including classes, objects, inheritance, and polymorphism. Through hands-on coding projects, you'll apply OOP concepts to build practical software solutions. This course is suitable for Python enthusiasts and those looking to enhance their coding skills.",
+        "price": 2100.0,
+        "credit": 4
+    },
+    {
+        "id": 6,
+        "img": "https://i.ibb.co/GCsX7kb/pic6.png",
+        "title": "Software Engineering Best Practices",
+        "description": "Become a more effective software engineer by learning best practices in this course. Topics include version control with Git, automated testing, code reviews, and software architecture principles. You'll gain the skills needed to work efficiently in software development teams and deliver high-quality software products.",
+        "price": 2300.0,
+        "credit": 4
+    },
+    {
+        "id": 7,
+        "img": "https://i.ibb.co/RzTZbvT/pic7.png",
+        "title": "AWS Cloud Services",
+        "description": "Get hands-on experience with Amazon Web Services (AWS) cloud services and infrastructure management. This course covers a wide range of AWS services, including EC2, S3, RDS, and Lambda. You'll learn to deploy and manage cloud applications and gain valuable skills for a career in cloud computing.",
+        "price": 2500.0,
+        "credit": 5
+    },
+    {
+        "id": 8,
+        "img": "https://i.ibb.co/wdgfTGb/pic8.png",
+        "title": "MySQL Database Management",
+        "description": "Master the art of MySQL database design, administration, and querying. This course covers database fundamentals, SQL queries, and database optimization techniques. You'll gain practical experience by working with real-world database scenarios. Whether you're a developer, data analyst, or database administrator, this course is essential.",
+        "price": 2200.0,
+        "credit": 4
+    },
+    {
+        "id": 9,
+        "img": "https://i.ibb.co/grnhcV2/pic9.png",
+        "title": "Problem-Solving and Algorithms",
+        "description": "Enhance your problem-solving skills with algorithmic thinking. This course focuses on strategies for solving complex problems efficiently. You'll learn various problem-solving techniques and apply them to algorithmic challenges. This course is suitable for aspiring software developers and computer science students.",
+        "price": 2000.0,
+        "credit": 3
+    }
+]
