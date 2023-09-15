@@ -8,7 +8,7 @@ const Courses = () => {
     const [courses, setCourses] = useState([])
     const [selections, setSelections] = useState([])
     const [credit, setCredit] = useState(0)
-    const [remainingCredit, setRemainingCredit] = useState(0)
+    const [remainingCredit, setRemainingCredit] = useState(20)
     const [totalPrice, setTotalPrice] = useState(0)
 
 
@@ -17,7 +17,6 @@ const Courses = () => {
         fetch(url)
             .then(res => res.json())
             .then(data => {
-                console.log(data)
                 setCourses(data)
             })
     }, [])
@@ -52,12 +51,11 @@ const Courses = () => {
             setTotalPrice(totalPrice)
 
         }
-
     }
     return (
         <div>
             <ToastContainer></ToastContainer>
-            <div className="flex flex-col md:flex-row gap-4">
+            <div className="flex flex-col md:flex-col-reverse lg:flex-row gap-4">
                 <div className=' grid md:grid-cols-2 lg:grid-cols-3 gap-4 lg:w-4/5 pb-5'>
                     {
                         courses.map(course => <Course
