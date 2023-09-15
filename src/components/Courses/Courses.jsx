@@ -7,7 +7,9 @@ import "react-toastify/dist/ReactToastify.css";
 const Courses = () => {
     const [courses, setCourses] = useState([])
     const [selections, setSelections] = useState([])
-    
+    const [credit, setCredit] = useState(0)
+    const [remainingCredit, setRemainingCredit] = useState(0)
+    const [totalPrice, setTotalPrice] = useState(0)
 
 
     useEffect(() => {
@@ -21,16 +23,34 @@ const Courses = () => {
     }, [])
 
     const handleSelect = (course) => {
+
+        let credit = course.credit
+        let remainingCredit = 20
+        let totalPrice = course.price
+
         const selected = selections.find(selection => selection.id === course.id)
         if (selected) {
             return toast.error("Already exist, please select others courses!", {
                 position: toast.POSITION.TOP_CENTER
             });
         } else {
+            selections.forEach(course => {
+                credit += course.credit
+                totalPrice += course.price
+            })
 
+            if (credit > 20) {
+                return toast.error("Credit is not alowed more than 20 hours !", {
+                    position: toast.POSITION.TOP_RIGHT
+                });
+            }
+            remainingCredit -= credit
+            setCredit(credit)
+            setRemainingCredit(remainingCredit)
             const newSelections = [...selections, course]
             setSelections(newSelections)
-           
+            setTotalPrice(totalPrice)
+
         }
 
     }
@@ -47,6 +67,9 @@ const Courses = () => {
                     }
                 </div>
                 <Selections
+                    credit={credit}
+                    totalPrice={totalPrice}
+                    remainingCredit={remainingCredit}
                     selections={selections}></Selections>
             </div>
         </div>
