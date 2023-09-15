@@ -1,7 +1,7 @@
 import React from 'react';
 import { FiDollarSign } from 'react-icons/fi';
 import { BiBookOpen } from 'react-icons/bi';
-const Course = ({ course }) => {
+const Course = ({ course,handleSelect }) => {
     const { title, description, credit, price, img } = course
     return (
         <div className='px-5 bg-white shadow-md py-5 rounded-md space-y-4'>
@@ -18,6 +18,7 @@ const Course = ({ course }) => {
                     <p>Credit: {credit} hr</p>
                 </div>
             </div>
+            <button onClick={() => handleSelect(course)} className='bg-blue-500 hover:bg-blue-600 rounded-md w-full py-2 text-lg text-white'>Select</button>
         </div>
     );
 };
